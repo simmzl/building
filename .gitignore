@@ -1,6 +1,6 @@
 .idea
 .vscode
 node_modules
-dist
+# dist
 upload
 package-lock.json
