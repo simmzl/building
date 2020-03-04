@@ -12,6 +12,10 @@
     }
 }
 
+.animation-fade {
+    animation: fade 3s infinite ease-in-out;
+}
+
 body {
     background: rgb(222, 222, 222);
 }
@@ -146,6 +150,7 @@ body {
 
                 .btns {
                     padding: 20px 0;
+                    animation: fade 3s infinite ease-in-out;
 
                     span {
                         display: inline-block;
@@ -228,7 +233,20 @@ body {
         &-left {
             width: 40%;
             height: 100%;
-            background: #000;
         }
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: .1;
     }
 }

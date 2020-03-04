@@ -29,6 +29,7 @@ $(document).ready(function () {
   myLottie.play();
 
   const playByStyle = (type) => {
+    if (style === type && type === "webgl") webgl.removeWebgl()
     style = type;
     if (!myAudioConnect) myAudioConnect = new AudioConnect();
 

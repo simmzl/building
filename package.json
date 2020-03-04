@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./build/dev-server.js",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack && node ./upload/index.js"
   },
   "repository": {
     "type": "git",
@@ -52,6 +52,8 @@
     "webpack-dev-server": "3.1.5"
   },
   "dependencies": {
-    "lottie-web": "^5.5.9"
+    "crypto-js": "^4.0.0",
+    "lottie-web": "^5.5.9",
+    "qiniu": "^7.3.0"
   }
 }

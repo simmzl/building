@@ -1,7 +1,6 @@
-cv
-test
 .idea
-v1.0
 .vscode
 node_modules
-backup
+dist
+upload
+package-lock.json
