@@ -44,6 +44,8 @@ const events = {
                 me.turn(e.target.innerText.toLowerCase());
             }
         }, false);
+
+        setTimeout(() => me.turn("music"), 1000)
     },
     moveUp(name) {
         this.currentName = name;
