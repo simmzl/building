@@ -45,7 +45,7 @@ const events = {
             }
         }, false);
 
-        setTimeout(() => me.turn("music"), 1000)
+        setTimeout(() => me.turn("music"), 1500)
     },
     moveUp(name) {
         this.currentName = name;
